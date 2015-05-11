@@ -1,0 +1,15 @@
+<%= form_for @list_item, html: { class: "to-do-form" } do |f| %>
+  <% if @list_item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@list_item.errors.count, "error") %> prohibited this list_item from being saved:</h2>
+
+      <ul>
+      <% @list_item.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%= f.text_field :content, placeholder: "Insert To Do Item Here", class: 'form-input' %>
+  <%=  button_tag "Add Item", class: "form-submit" %>
+<% end %>

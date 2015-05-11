@@ -1,0 +1,24 @@
+<div class="list">
+  <h2>To Do List</h2>
+  <%= render "form" %>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="content-list"></th>
+        <th></th>
+        <th colspan="0"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @list_items.each do |list_item| %>
+        <tr>
+          <td class="content-list"><%= list_item.content %></td>
+          <td><%= list_item.complete %></td>
+          <td><button class="toggle-complete" data-id=<%= list_item.id %>>Toggle Completion</button></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
