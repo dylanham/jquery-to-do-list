@@ -24,6 +24,10 @@ You will be implementing CRUD features using jQuery to create, update, and destr
 
 - Add a delete button for each ListItem. When clicked, it should remove the ListItem from the database as well as the DOM. This should persist through page refreshes.
 
-### Iteration Five | Extracting Rails && Javascript
+### Iteration Five | Editing ListItems
+
+-  Make the content of each ListItem an input field that allows you to change the text. Upon clicking _out_ of the input box, save the next text to the database so that it persists on page refresh.
+
+### Iteration Six | Extracting Rails && Javascript
 
 -  Create a node server with a single page which looks as close as possible to the rails root page. Your node server should post to the rails server (you'll have two localhost servers running), and the functionality should remain the same.
