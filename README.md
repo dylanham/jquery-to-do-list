@@ -4,6 +4,7 @@ You will be implementing CRUD features using jQuery to create, update, and destr
 
 ### Iteration Zero | Appending with jQuery
 
+-  Clone this app, create a database, run migrations, run the server.
 -  Intercept the default form behavior to append a To-Do ListItem to the List. This does item does not have to persist through refreshing the page.
 
 ### Iteration One | POST with jQuery
