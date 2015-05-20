@@ -14,9 +14,10 @@
     <tbody>
       <% @list_items.each do |list_item| %>
         <tr>
-          <td class="content-list"><%= list_item.content %></td>
+          <td class="content-list"><input value =<%= list_item.content %>></input></td>
           <td><%= list_item.complete %></td>
           <td><button class="toggle-complete" data-id=<%= list_item.id %>>Toggle Completion</button></td>
+          <td><button class="delete-button" data-id=<%= list_item.id %>> Delete </button></td>
         </tr>
       <% end %>
     </tbody>

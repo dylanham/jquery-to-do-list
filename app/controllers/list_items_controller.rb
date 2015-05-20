@@ -22,6 +22,10 @@ class ListItemsController < ApplicationController
   end
 
   def destroy
+    @list_item.destroy
+    respond_to do |format|
+      format.json {render json: @list_item}
+    end
   end
 
   def toggle
